@@ -1,12 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Rosa Ateliee</title>
+    <title>Rosa Ateliêe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Rosa Ateliee</h1>
-    <p>Your place for unique handmade items.</p>
+    <header>
+        <div class="navbar">
+            <img src="logo.png" alt="Rosa Ateliêe Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#stores">Lojas</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Bem-vindo à Rosa Ateliêe!</h1>
+        <button onclick="scrollToProducts()">Ver Produtos</button>
+        <button onclick="scrollToContact()">Fale Conosco</button>
+    </section>
+
+    <section id="products">
+        <div class="product-container">
+            <h2>Nossos Produtos</h2>
+            <!-- Product items will be generated here -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Rosa Ateliêe é uma empresa que...</p>
+        <div class="statistics">
+            <p>10+ Anos</p>
+            <p>5k+ Clientes</p>
+            <p>100% Original</p>
+        </div>
+    </section>
+
+    <section id="stores">
+        <h2>Nossas Lojas</h2>
+        <p>Informações da loja em São Miguel dos Campos...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Fale conosco através do WhatsApp: <a href="https://wa.me/123456789">WhatsApp</a></p>
+        <p>Siga-nos no Instagram: <a href="https://instagram.com/rosaateliee">Instagram</a></p>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <!-- Footer links and social icons -->
+        </div>
+    </footer>
+
+    <button class="whatsapp-button" onclick="openWhatsApp()">WhatsApp</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
